@@ -1,4 +1,5 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -36,7 +37,7 @@ function App() {
         <nav className="navigation" aria-label="주요 메뉴">
           <a href="#about">맬맬 소개</a>
           <a href="#features">주요 기능</a>
-          <a href="mailto:teams.melmel@gmail.com">문의하기</a>
+          <Link to="/support">문의하기</Link>
         </nav>
       </header>
 
@@ -146,8 +147,8 @@ function App() {
           <span>매일매일, 나를 쌓아가는 시간.</span>
         </div>
         <div className="footer-links">
-          <a href="mailto:teams.melmel@gmail.com">고객지원</a>
-          <span>개인정보처리방침 준비 중</span>
+          <Link to="/support">고객지원</Link>
+          <Link to="/privacy">개인정보처리방침</Link>
         </div>
         <p>© {new Date().getFullYear()} melmel. All rights reserved.</p>
       </footer>
